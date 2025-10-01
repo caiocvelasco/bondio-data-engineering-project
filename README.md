@@ -1,3 +1,47 @@
+# Table of Contents
+
+1. **Ingestion**
+   - [1.1 Partitioning (and folder structure)](#11-partitioning-and-folder-structure)
+   - [1.2 Descriptive file names](#12-descriptive-file-names)
+   - [1.3 Idempotency](#13-idempotency)
+   - [1.4 Wrap-Up](#wrap-up)
+
+2. **Validation**
+   - 2.1 Definition  
+   - 2.2 Why validation matters  
+   - 2.3 Types of validation checks  
+   - 2.4 Tools to implement validation  
+   - 2.5 Bondio example  
+
+3. **Loading (Raw → Staging)**
+   - 3.1 Loader definition and options  
+   - 3.2 Raw layer  
+   - 3.3 Staging layer  
+   - 3.4 Bondio example  
+
+4. **Transformations (Staging → Analytics)**
+   - 4.1 Medallion architecture  
+   - 4.2 Facts and dimensions  
+   - 4.3 Handling slowly changing dimensions  
+   - 4.4 Bondio example  
+
+5. **Analytics and Reporting**
+   - 5.1 Common use cases  
+   - 5.2 Example dbt marts  
+   - 5.3 Bondio example  
+
+6. **Monitoring and Observability**
+   - 6.1 Data quality tests  
+   - 6.2 File arrival checks  
+   - 6.3 Logging and manifest audits  
+   - 6.4 Bondio example  
+
+7. **Wrap-Up and Next Steps**
+   - 7.1 Key principles  
+   - 7.2 Future improvements  
+   - 7.3 Why this matters for Bondio
+
+
 # Section 1: Ingestion
 
 When building an end-to-end data pipeline, the first step is **Ingestion**.  
