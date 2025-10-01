@@ -1,46 +1,45 @@
 # Table of Contents
 
-1. **Ingestion**
-   - [1.1 Partitioning (and folder structure)](#11-partitioning-and-folder-structure)
-   - [1.2 Descriptive file names](#12-descriptive-file-names)
-   - [1.3 Idempotency](#13-idempotency)
-   - [1.4 Wrap-Up](#wrap-up)
+1. [Section 1: Ingestion](#section-1-ingestion)  
+   - [1.1 Partitioning (and folder structure)](#1-partitioning-and-folder-structure)  
+   - [1.2 Descriptive File Names](#2-descriptive-file-names)  
+   - [1.3 Idempotency](#3-idempotency)  
+   - [1.4 Wrap-Up](#wrap-up)  
 
-2. **Validation**
-   - 2.1 Definition  
-   - 2.2 Why validation matters  
-   - 2.3 Types of validation checks  
-   - 2.4 Tools to implement validation  
-   - 2.5 Bondio example  
+2. [Section 2: Validation](#section-2-validation)  
+   - [2.1 Definition](#21-definition)  
+   - [2.2 Why validation matters](#22-why-validation-matters)  
+   - [2.3 Types of validation checks](#23-types-of-validation-checks)  
+   - [2.4 Tools to implement validation](#24-tools-to-implement-validation)  
+   - [2.5 Bondio example](#25-bondio-example)  
 
-3. **Loading (Raw → Staging)**
-   - 3.1 Loader definition and options  
-   - 3.2 Raw layer  
-   - 3.3 Staging layer  
-   - 3.4 Bondio example  
+3. [Section 3: Loading (Raw → Staging)](#section-3-loading-raw--staging)  
+   - [3.1 Loader definition and options](#31-loader-definition-and-options)  
+   - [3.2 Raw layer](#32-raw-layer)  
+   - [3.3 Staging layer](#33-staging-layer)  
+   - [3.4 Bondio example](#34-bondio-example)  
 
-4. **Transformations (Staging → Analytics)**
-   - 4.1 Medallion architecture  
-   - 4.2 Facts and dimensions  
-   - 4.3 Handling slowly changing dimensions  
-   - 4.4 Bondio example  
+4. [Section 4: Transformations (Staging → Analytics)](#section-4-transformations-staging--analytics)  
+   - [4.1 Medallion architecture](#41-medallion-architecture)  
+   - [4.2 Facts and dimensions](#42-facts-and-dimensions)  
+   - [4.3 Handling slowly changing dimensions](#43-handling-slowly-changing-dimensions)  
+   - [4.4 Bondio example](#44-bondio-example)  
 
-5. **Analytics and Reporting**
-   - 5.1 Common use cases  
-   - 5.2 Example dbt marts  
-   - 5.3 Bondio example  
+5. [Section 5: Analytics and Reporting](#section-5-analytics-and-reporting)  
+   - [5.1 Common use cases](#51-common-use-cases)  
+   - [5.2 Example dbt marts](#52-example-dbt-marts)  
+   - [5.3 Bondio example](#53-bondio-example)  
 
-6. **Monitoring and Observability**
-   - 6.1 Data quality tests  
-   - 6.2 File arrival checks  
-   - 6.3 Logging and manifest audits  
-   - 6.4 Bondio example  
+6. [Section 6: Monitoring and Observability](#section-6-monitoring-and-observability)  
+   - [6.1 Data quality tests](#61-data-quality-tests)  
+   - [6.2 File arrival checks](#62-file-arrival-checks)  
+   - [6.3 Logging and manifest audits](#63-logging-and-manifest-audits)  
+   - [6.4 Bondio example](#64-bondio-example)  
 
-7. **Wrap-Up and Next Steps**
-   - 7.1 Key principles  
-   - 7.2 Future improvements  
-   - 7.3 Why this matters for Bondio
-
+7. [Section 7: Wrap-Up and Next Steps](#section-7-wrap-up-and-next-steps)  
+   - [7.1 Key principles](#71-key-principles)  
+   - [7.2 Future improvements](#72-future-improvements)  
+   - [7.3 Why this matters for Bondio](#73-why-this-matters-for-bondio)
 
 # Section 1: Ingestion
 
